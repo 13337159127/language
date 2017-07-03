@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>消息对话框</title>
+<script type="text/javascript">
+  //confirm语法  返回boolean类型
+  function contxt(){
+	  var message = confirm("你喜欢JS吗");
+	  if(message == true){
+		  document.write("很好,加油!");
+	  }else{
+		  document.write("需要努力了");
+	  }  
+  }   
+</script>
+</head>
+<body>
+<input type="button" value="confirm属性" onclick="contxt()">
+</body>
+</html>

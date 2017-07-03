@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>显示和隐藏</title>
+<script type="text/javascript">
+  function none(){
+	 document.getElementById("con").style.display="none";
+  }
+  function block(){
+	  document.getElementById("con").style.display="block";
+  }
+</script>
+</head>
+<body>
+    <h1>JavaScript</h1>  
+    <p id="con">做为一个Web开发师来说，如果你想提供漂亮的网页、令用户满意的上网体验，JavaScript是必不可少的工具。</p>
+    <form>
+      <input type="button" onclick="none()" value="隐藏">
+      <input type="button" onclick="block()" value="显示">
+    </form> 
+</body>
+</html>
