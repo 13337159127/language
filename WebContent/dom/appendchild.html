@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>插入节点</title>
+</head>
+<body>
+	<ul id="test">
+		<li>JavaScript</li>
+		<li>HTML</li>
+	</ul>
+	<script type="text/javascript">
+		var otest = document.getElementById("test");
+		var newnode = document.createElement("li");
+		newnode.innerHTML = "WEB前端"
+		otest.appendChild(newnode);
+	</script>
+</body>
+</html>

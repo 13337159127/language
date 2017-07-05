@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>返回前一个页面，跳转下一个页面，指定页面</title>
+<script type="text/javascript">
+	function goback() {
+		window.history.back();
+	}
+	function goforward() {
+		window.history.forward();
+	}
+	function go() {
+		window.history.go(-2);
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="点击返回前一个页面" onclick="goback()">
+	<input type="button" value="点击跳转下一个页面" onclick="goforward()">
+	<input type="button" value="指定某个页面" onclick="go()">
+</body>
+</html>

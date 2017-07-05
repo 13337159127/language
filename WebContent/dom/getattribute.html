@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>通过元素节点的属性名称获取属性的值</title>
+</head>
+<body>
+	<p id="intro">课程列表</p>
+	<ul>
+		<li title="第1个li">HTML</li>
+		<li>CSS</li>
+		<li title="第3个li">JavaScript</li>
+		<li title="第4个li">Jquery</li>
+		<li>Html5</li>
+	</ul>
+	<p>以下为获取的不为空的li标签title值:</p>
+	<script type="text/javascript">
+		//用变量接收li的个数
+		var array = document.getElementsByTagName("li");
+		//循环遍历数组
+		for (var i = 0; i < array.length; i++) {
+			var text = array[i].getAttribute("title");
+			//if (text != null) {
+				document.write("title的值：" + text + "<br>");
+			//}
+		}
+	</script>
+</body>
+</html>

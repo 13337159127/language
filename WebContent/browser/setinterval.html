@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>计时器设置时间,点击stop，取消设置时间</title>
+<script type="text/javascript">
+	//计时器设置时间
+	var i = setInterval("clock()", 100);
+	function clock() {
+		var time = new Date();
+		document.getElementById("clock").value = time;
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="clock" size="50" />
+	<input type="button" value="Stop" onclick="clearInterval(i)" />
+</body>
+</html>

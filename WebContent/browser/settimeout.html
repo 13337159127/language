@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>计时器,访问页面，3秒记一次数，点击stop，停止计数</title>
+<script type="text/javascript">
+	var num = 0;
+	var i;
+	//定义一个设置计时器的函数
+	function info() {
+		document.getElementById('txt').value = num;
+		num = num + 1;
+		i = setTimeout("info()", 3000);
+	}
+	//定义一个取消计时器的函数
+	function stop() {
+		clearTimeout(i);
+	}
+</script>
+</head>
+<body>
+	<form>
+		<input type="text" id="txt"> 
+		<input type="button" value="start" onclick="info()">
+		<input type="button" value="stop" onclick="stop()">
+	</form>
+</body>
+</html>

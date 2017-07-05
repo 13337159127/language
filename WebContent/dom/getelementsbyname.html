@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>返回带有指定名称的节点对象的集合</title>
+<script type="text/javascript">
+	function getElements() {
+		var array = document.getElementsByName("myt");
+		alert(array.length);
+	}
+</script>
+</head>
+<body>
+	<a name="myt" href="#">我是连接一</a>
+	<br>
+	<a name="myt" href="#">我是连接二</a>
+	<br>
+	<a name="myt" href="#">我是连接三</a>
+	<br>
+	<input type="button" value="数组的值" onclick="getElements()">
+</body>
+</html>

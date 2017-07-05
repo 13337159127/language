@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>通过getElementsByTagName()获取节点</title>
+<script type="text/javascript">
+	function message() {
+		//获取所有li的集合
+		var list = document.getElementsByTagName("li");
+		//访问无序列表：[0]索引
+		li = list[0];
+		//获取list的长度
+		document.write("数组的长度为：" + list.length + "<br>");
+		//弹出li内容的对象
+		document.write("获取节点对象为：" + li.innerHTML);
+	}
+</script>
+</head>
+<body>
+	<p id="intro">我的课程</p>
+	<ul>
+		<li>JavaScript</li>
+		<li>HTML</li>
+		<li>PHP</li>
+		<li>web前端</li>
+	</ul>
+	<input type="button" value="获取值" onclick="message()">
+</body>
+</html>
