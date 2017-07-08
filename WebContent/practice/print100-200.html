@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>打印100-200的值</title>
+<script type="text/javascript">
+	//定义一个函数，把值赋值给数组
+	function math() {
+		var array = new Array();
+		for (var i = 0; i < 101; i++) {
+			array[i] = i + 100;
+		}
+		return array;
+	}
+	//定义一个函数，循环遍历数组，把数组的值取出来
+	function round(myarray) {		 
+		var number = "";
+		for (var i = 0; i < myarray.length; i++) {
+			//根据数组下标取出数组里面的值赋值给变量
+			number = number + " " + myarray[i];
+		}
+		return number;
+	}
+	//打印数组的值
+	function print(figure) {		 
+		document.write(figure);
+	}
+	//调用每个函数的方法
+	function method() {
+		var myarray = math();
+		var figure = round(myarray);
+		print(figure);
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="输出100-200的值" onclick="method()">
+</body>
+</html>

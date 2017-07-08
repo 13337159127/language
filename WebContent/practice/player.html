@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>储存球员号码</title>
+<script type="text/javascript">
+	//定义一个函数  把球员号码和球员姓名赋值给对象
+	function player() {
+		var obj = new Object();
+		obj["30"] = "小赵";
+		obj["31"] = "小冯";
+		obj["32"] = "小刘";
+		obj["33"] = "小明";
+		return obj;
+	}
+	//定义一个函数  判断，如果输入球员的号码正确，输出球员的名字，否则输出 找不到
+	function judge(obj, number) {
+		if (obj[number] != null) {
+			var username = document.getElementById("price");
+			username.value = obj[number];
+		} else {
+			var notfound = document.getElementById("price");
+			notfound.value = "找不到";
+		}
+	}
+	//调用函数
+	function method() {
+		var number = document.getElementById("playernumber").value;
+		if (number == "") {
+			return alert("请输入球员编号");
+		}
+		var obj = player();
+		judge(obj, number);
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="playernumber" value="" placeholder="请输入球员号码">
+	<br>
+	<input type="text" id="price" value="" placeholder="返回的球员信息">
+	<br>
+	<input type="button" value="输出" onclick="method()">
+</body>
+</html>

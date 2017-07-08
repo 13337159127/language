@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>在表格输出1-100个数</title>
+<script type="text/javascript">
+	//定义一个函数  把1-100存到数组中
+	function math() {
+		var array = new Array(100);
+		document.write("<table border='1'>");
+		for (var i = 0; i < array.length; i++) {
+			array[i] = i;
+			document.write("<tr><td>" + array[i] + "</td></tr>");
+		}
+		document.write("</table>");
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="在表格输出100个数字" onclick="math()">
+</body>
+</html>
